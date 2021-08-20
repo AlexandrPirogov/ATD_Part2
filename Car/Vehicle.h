@@ -4,6 +4,8 @@
 
 class Vehicle
 {
+protected:
+	int x_coord = 0;
 public:
 	int max_speed;
 	Engine* engine = nullptr; //Композиция. Vehicle has an engine.
@@ -14,5 +16,6 @@ public:
 	void turn(bool turnOn);
 	virtual void drive() = 0;
 	~Vehicle() { delete engine; }
+
 };
 

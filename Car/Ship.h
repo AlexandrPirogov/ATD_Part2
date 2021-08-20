@@ -8,6 +8,8 @@ class Ship : public Vehicle // Наследуемся от класса тран
 {
 public:
 	Ship(int _max_speed, Engine* engine, std::string _name) : Vehicle(_max_speed, engine, _name) {};
-	void drive();
+	void drive(); // Специализация, то есть переопределяются все методы класса-родителя (
+	//допустим drive меняет координату х на 1. Тогда, специализацией будет переопределение метода
+	//drive() путем изменения координаты на , допустим, 2.
 };
 

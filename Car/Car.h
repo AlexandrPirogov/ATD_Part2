@@ -8,5 +8,6 @@ class Car : public Vehicle // Наследуемся от класса тран�
 public:
 	Car(int _max_speed, Engine* _engine, std::string _name) : Vehicle(_max_speed, _engine, _name) {};
 	void drive();
+	void change_wheels(); // Расширение поведения родетльского класса путем добавления нового метода
 };
 
