@@ -16,9 +16,9 @@ int main()
    A* c1 = new C();
    a->toStringPublic(); //public A andd public B && private A and private B
    b->toStringPublic(); //private/protected A and private/protected B but accesable even it B's methods is private
-   c->toStringPublic(); //Exception//public A but private C
+   c->toStringPublic(); //Exception//public A but private C but C's methods accesable even it is private
 
-   b1->toStringPublic(); //
-   c1->toStringPublic();//
+   //b1->toStringPublic(); //Exception
+   //c1->toStringPublic();//Expeptiomn
    return 0;
 }
